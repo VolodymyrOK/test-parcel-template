@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather API</title>
+    <title>REST Countries</title>
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-
     <form action="submit" class="js-search">
-      <input type="text" name="query" />
-      <select name="days">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-        <option value="10">10</option>
-      </select>
+      <div class="js-form-container">
+        <input type="text" name="country" />
+      </div>
+
       <button>Пошук</button>
     </form>
+    <button class="js-add">Додати країну</button>
     <ul class="js-list"></ul>
-    <script src="js/weather.js" type="module"></script>
+    <script src="js/restcountries.js" type="module"></script>
   </body>
 </html>
